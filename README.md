@@ -1,4 +1,3 @@
-# customer-survey-participation-analysis
 # Predicting Customer Satisfaction Survey Participation: A Python-Based Analysis of Response Behavior
 
 ## 1. Business Problem
