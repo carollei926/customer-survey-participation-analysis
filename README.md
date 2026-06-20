@@ -34,11 +34,11 @@ The analysis compares response rates across the three customer segments and expl
 A Python-based predictive model will be developed to estimate the likelihood of current survey participation. Potential methods include:
 
 * Logistic regression
-* Decision tree
+(* Decision tree
 * Random forest
-* Gradient boosting
+* Gradient boosting)
 
-The model will be evaluated using metrics such as accuracy, precision, recall, ROC-AUC, and confusion matrix.
+(The model will be evaluated using metrics such as accuracy, precision, recall, ROC-AUC, and confusion matrix.)         
 
 ## 5. Intervention Strategy
 
@@ -54,8 +54,6 @@ Based on the analysis, silent customers may be targeted with alternative outreac
 Future interventions can be evaluated using an A/B test or quasi-experimental comparison. Potential outcome metrics include:
 
 * Survey response rate
-* Email open rate
-* Email click rate
 * Survey completion rate
 * Bounce or block rate
 * Difference in participation between survey-platform sender and organization-domain sender
