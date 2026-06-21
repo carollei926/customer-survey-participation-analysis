@@ -1,63 +1,103 @@
-# Predicting Customer Satisfaction Survey Participation: A Python-Based Analysis of Response Behavior
+# Understanding Customer Survey Participation Through Response History Segmentation
 
-## 1. Business Problem
+## Project Overview
 
-Customer satisfaction surveys are an important tool for understanding service quality, customer experience, and areas for improvement. However, not all customers participate equally. Some customers repeatedly respond to surveys, while others remain silent even after being invited.
+Customer satisfaction surveys are widely used to measure service quality and customer experience. However, survey participation is often uneven across customer groups, creating challenges for data quality and representativeness.
 
-This project analyzes customer satisfaction survey participation patterns using prior survey history. The goal is to identify key customer segments, especially silent customers, and explore strategies to improve future response rates.
+This project examines whether prior survey participation history can predict future survey response behavior. Using two consecutive survey cycles, customers were segmented according to their prior response history and compared based on subsequent participation rates.
 
-## 2. Customer Segmentation
+The goal was to identify customer groups that may benefit from targeted outreach strategies and to provide practical recommendations for improving survey participation.
 
-Customers are grouped into three response-history segments:
+---
 
-1. **Prior Responders**
-   Customers who were surveyed in the past two years and responded at least once.
+## Business Question
 
-2. **Silent Customers**
-   Customers who were surveyed in the past two years but did not respond.
+Can prior survey participation history predict future customer survey response behavior?
 
-3. **New Customers / Not Recently Surveyed Customers**
-   Customers who were not surveyed in the past two years.
+Specifically:
 
-## 3. Exploratory Analysis
+* Are previous responders more likely to respond again?
+* Are historically silent customers less likely to participate?
+* Are there differences between in-state and out-of-state customers?
 
-The analysis compares response rates across the three customer segments and explores whether participation patterns differ by customer characteristics, such as:
+---
 
-* In-state vs. out-of-state customers
-* Public vs. private sector customers
-* Customer tenure
-* Survey invitation history
-* Prior response behavior
+## Customer Segmentation
 
-## 4. Predictive Modeling
+Customers were classified into three groups:
 
-A Python-based predictive model will be developed to estimate the likelihood of current survey participation. Potential methods include:
+### Prior Responders
 
-* Logistic regression
-(* Decision tree
-* Random forest
-* Gradient boosting)
+Customers who were surveyed in the previous two years and responded at least once.
 
-(The model will be evaluated using metrics such as accuracy, precision, recall, ROC-AUC, and confusion matrix.)         
+### Silent Customers
 
-## 5. Intervention Strategy
+Customers who were surveyed in the previous two years but never responded.
 
-Based on the analysis, silent customers may be targeted with alternative outreach strategies, such as:
+### New Customers
 
-* Sending survey invitations from the organization’s email domain instead of the survey platform domain
-* Customizing reminder language
-* Testing more personalized follow-up messages
-* Monitoring whether email blocking or sender trust affects participation
+Customers who had not been surveyed in the previous two years.
 
-## 6. Evaluation Plan
+---
 
-Future interventions can be evaluated using an A/B test or quasi-experimental comparison. Potential outcome metrics include:
+## Key Findings
 
-* Survey response rate
-* Survey completion rate
-* Bounce or block rate
-* Difference in participation between survey-platform sender and organization-domain sender
+### Finding 1: Prior response history strongly predicts future participation
 
-## 7. Key Takeaway
+| Segment          | FY25 Response Rate | FY26 Response Rate |
+| ---------------- | ------------------ | ------------------ |
+| Prior Responders | 69%                | 71%                |
+| New Customers    | 39%                | 38%                |
+| Silent Customers | 28%                | 20%                |
 
-This project demonstrates how prior response behavior can be used to segment customers, identify silent customers, and guide targeted outreach strategies to improve customer satisfaction survey participation.
+Customers who responded previously were substantially more likely to respond again.
+
+---
+
+### Finding 2: Silent customers consistently exhibit the lowest participation rates
+
+Across both survey cycles, silent customers demonstrated the lowest response rates, suggesting that prior nonresponse is a strong indicator of future nonresponse.
+
+---
+
+### Finding 3: Geographic differences may exist
+
+Overall response rates were higher among out-of-state customers than in-state customers.
+
+| Year | In-State | Out-of-State |
+| ---- | -------- | ------------ |
+| FY25 | 45%      | 60%          |
+| FY26 | 43%      | 62%          |
+
+However, subgroup sample sizes were limited and additional validation would be required before implementing location-specific interventions.
+
+---
+
+## Business Implications
+
+The findings suggest that survey participation can be improved through targeted engagement strategies.
+
+Potential interventions include:
+
+* Customized reminder messaging
+* Alternative sender-domain testing
+* Segment-specific outreach strategies
+* Enhanced engagement plans for historically silent customers
+
+---
+
+## Tools Used
+
+* Python
+* Pandas
+* NumPy
+* JupyterLab
+* Matplotlib
+
+---
+
+## Data Confidentiality Notice
+
+The original project was conducted using proprietary customer satisfaction survey data.
+
+To protect confidentiality and comply with organizational data governance requirements, all publicly shared data in this repository have been aggregated and de-identified. No customer-level information is included.
