@@ -50,6 +50,10 @@ Customers who had not been surveyed in the previous two years.
 | New Customers    | 39%                | 38%                |
 | Silent Customers | 28%                | 20%                |
 
+Response rates differed significantly across customer segments (Chi-square test, p < .001).
+
+In both years' data, prior Responders demonstrated the highest participation rate (71%), followed by New Customers (38%) and Silent Customers (20%).
+
 Customers who responded previously were substantially more likely to respond again.
 
 ---
