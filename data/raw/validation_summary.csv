@@ -1,0 +1,13 @@
+survey_year,customer_segment,in_out_state,n,n_responded,response_rate
+FY25,New Customers,In-State,180,63,35.0
+FY25,New Customers,Out-of-State,20,10,50.0
+FY25,Prior Responders,In-State,210,139,66.2
+FY25,Prior Responders,Out-of-State,40,34,85.0
+FY25,Silent Customers,In-State,120,30,25.0
+FY25,Silent Customers,Out-of-State,30,13,43.3
+FY26,New Customers,In-State,140,42,30.0
+FY26,New Customers,Out-of-State,30,22,73.3
+FY26,Prior Responders,In-State,200,136,68.0
+FY26,Prior Responders,Out-of-State,50,40,80.0
+FY26,Silent Customers,In-State,150,33,22.0
+FY26,Silent Customers,Out-of-State,30,3,10.0
